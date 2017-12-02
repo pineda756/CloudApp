@@ -1,0 +1,12 @@
+version: '3'
+services:
+  zookeeper:
+    image: zookeeper
+  kafka:
+    image: kafka-cs385:alpine
+    links:
+        - zookeeper
+  mymongo:
+    image: mongo:3.4
+    ports:
+        - "27017:27017"
