@@ -3,7 +3,7 @@ services:
   zookeeper:
     image: zookeeper
   kafka:
-    image: kafka-cs385:alpine
+    image: kafka-cs385
     links:
         - zookeeper
   mymongo:
