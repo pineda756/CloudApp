@@ -6,6 +6,8 @@ services:
       - "2181"
   mongo:
     image: mongo
+    ports:
+    - '27017:27017'
 
 
   kafka:
